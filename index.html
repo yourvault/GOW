@@ -44,7 +44,6 @@
             padding: 20px 0;
             text-align: center;
             width: 100%;
-            max-width: 1300px;
             backdrop-filter: blur(5px);
             box-sizing: border-box;
         }
@@ -101,7 +100,6 @@
             display: flex;
             justify-content: center;
             padding: 60px 20px;
-            max-width: 1300px;
             width: 100%;
             animation: fadeIn 1s ease-in;
             box-sizing: border-box;
@@ -223,7 +221,6 @@
         }
 
         .features-section {
-            max-width: 1300px;
             width: 100%;
             padding: 60px 20px;
             text-align: center;
@@ -316,7 +313,6 @@
         }
 
         .game-nav-section {
-            max-width: 1300px;
             width: 100%;
             padding: 40px 20px;
             text-align: center;
@@ -365,7 +361,6 @@
             color: #888888;
             border-top: 1px solid #ffffff;
             width: 100%;
-            max-width: 1300px;
             box-sizing: border-box;
         }
 
@@ -393,6 +388,13 @@
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
+        }
+
+        /* Ensure full-screen layout on desktop while preserving mobile */
+        @media (min-width: 601px) {
+            header, .game-container, .features-section, .game-nav-section, footer {
+                max-width: none;
+            }
         }
     </style>
     <script type="text/javascript">
@@ -464,8 +466,8 @@
     </section>
 
     <footer>
-    <p>NOTE: You will download a mobile game similar to the one you selected.</p>
-    <p>&copy; 2025 GLXY.SITE - All rights reserved.</p>
+        <p>NOTE: You will download a mobile game similar to the one you selected.</p>
+        <p>© 2025 GLXY.SITE - All rights reserved.</p>
     </footer>
 
     <script>
